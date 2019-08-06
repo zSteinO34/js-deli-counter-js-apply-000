@@ -4,6 +4,13 @@ function takeANumber(arr, str) {
   return `Welcome, ${str}. You are number ${current} in line.`;
 }
 
+var current = 0;
+
+function takeANumber(arr) {
+  arr.push(++current);
+  return `Welcome, You are number ${current}.`;
+}
+
 function nowServing(arr) {
   var next = arr[0];
   if(next) {
@@ -25,4 +32,3 @@ function currentLine(arr) {
     return `The line is currently empty.`;
   }
 }
-
